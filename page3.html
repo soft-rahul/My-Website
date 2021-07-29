@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> MY website - Page 3 </title>
+    <!-- linking external css file -->
+    <link rel="stylesheet" href="CSS/navigation.css">
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/structure.css">
+     <!-- temporary css file  -->
+     <link rel="stylesheet" href="CSS/tem.css">
+</head>
+<body>
+    <!-- using some sementic elements -->
+    <header class="header" id="page-header">
+        <div class="header-wrapper">
+
+            <p> MY <span class="special">website</span></p>
+
+        </div>
+
+
+    </header>
+    <nav class="navigation" id="page-navigation">
+        <!-- mobile view -->
+
+        <div class="mob-menu">
+            <div class="mob-left">
+                <span class="mob-left-circle"></span>
+            </div>
+            <div class="mob-right">
+                <div class="hamberger-menu" id="open" onclick="openMenu()">
+                    <div class="hamberger-menu-lines">
+                        <span class="line"> </span>
+                        <span class="line"></span>
+                        <span class="line"></span>
+                    </div>
+                    <div class="dropdown-menu" id="js-dropdown-menu">
+                        <button onclick="closeMenu()" class="menu-close-btn" id="js-menu-close-btn">&times;</button>
+                        <div class="dropdown-menu-extra">
+
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="page1.html">page 1</a></li>
+                                <li><a href="page2.html">page 2</a></li>
+                                <li><a href="page4.html">page 4</a></li>
+                            </ul>
+    
+
+                        </div>
+                       
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- desktop view -->
+        <div class="desktop-view-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="page1.html">page 1</a></li>
+                <li><a href="page2.html">page 2</a></li>
+                <li><a href="page4.html">page 4</a></li>
+                <li><a href="">More</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- main section of webpage -->
+    <main class="main" id="page-main">
+        <h2> Content </h2>
+        <p> More content is coming soon....</p>
+    </main>
+
+    <footer class="footer" id="page-footer">
+        <div class="footer-wrapper">
+
+            <h3> Developer</h3>
+          
+            <!-- desktop view -->
+            <div class="f-w-wrapOne desktop">
+                <div>
+                    <img style="width:70px; height:70px" id="profile" src="../Multimedia/Images/WhatsApp Image 2021-06-23 at 04.23.07.jpeg" alt="" />
+                  </div>  
+            <div>
+                <p> Name : <Span class="extra special">Rahul keshri</Span></p>
+            </div>
+            <div>
+                <p>E-mail: <span class="extra special">keshrirahulkumar48@gmail.com</span></p>
+            </div>
+
+            </div>
+
+            <!-- end note -->
+            <div class="footer-end-note">
+                <div class="flex">
+                    
+                <span> All Rights Reserved  </span>
+                <span> &copy; 2021 - 2022 </span>
+            </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- page content end here -->
+    <!-- linkng js  -->
+    <script src="JavaScript/p1.js"></script>
+</body>
+</html>

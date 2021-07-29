@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MY website</title>
+    <!-- linking external css file -->
+    <link rel="stylesheet" href="CSS/main.css" />
+    <link rel="stylesheet" href="CSS/navigation.css" />
+    <link rel="stylesheet" href="CSS/reset.css" />
+    <link rel="stylesheet" href="CSS/structure.css" />
+    <link rel="stylesheet" href="CSS/color.css">
+
+    <!-- linking google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- adding page logo -->
+    <!-- adding some more google font -->
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+      </style>
+    <!-- <link rel="icon" href="../Multimedia/Images/WhatsApp Image 2021-06-23 at 04.23.07.jpeg" sizes="20x20"> -->
+  </head>
+  <body>
+    <!-- using some sementic elements -->
+    <header class="header" id="page-header">
+      <div class="header-wrapper">
+        <p>MY <span class="special">website</span></p>
+      </div>
+    </header>
+
+    <nav class="navigation" id="page-navigation">
+      <!-- mobile view -->
+
+      <div class="mob-menu">
+        <div class="mob-left">
+          <span class="mob-left-circle"></span>
+        </div>
+        <div class="mob-right">
+          <div class="hamberger-menu" id="open" onclick="openMenu()">
+            <div class="hamberger-menu-lines">
+              <span class="line"> </span>
+              <span class="line"></span>
+              <span class="line"></span>
+            </div>
+            <div class="dropdown-menu" id="js-dropdown-menu">
+              <button
+                onclick="closeMenu()"
+                class="menu-close-btn"
+                id="js-menu-close-btn"
+              >
+                &times;
+              </button>
+              <div class="dropdown-menu-extra">
+                <ul>
+                  <li><a href="page1.html">page 1</a></li>
+                  <li><a href="page2.html">page 2</a></li>
+                  <li><a href="page3.html">page 3 </a></li>
+                  <li><a href="page4.html">page 4</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- desktop view -->
+      <div class="desktop-view-menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="page1.html">page 1</a></li>
+          <li><a href="page2.html">page 2</a></li>
+          <li><a href="page3.html">page 3</a></li>
+          <li><a href="page4.html">page 4</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- main section of webpage -->
+    <main class="main" id="pg-main">
+      <div class="main-container">
+        <h2>Tech Gallary</h2>
+        <section class="partition">
+          <h3>Top 3 Programming Languages</h3>
+          <div class="grid-parent">
+            <div class="grid-child">
+              <div class="img">
+                <img
+                  src="Multimedia/Images/1200px-C_Programming_Language.svg.png"
+                  alt=""
+                  style="max-width: 100%; max-height: 100%"
+                />
+              </div>
+              <h4>C</h4>
+            </div>
+            <div class="grid-child">
+              <div class="img">
+                <img
+                  src="Multimedia/Images/1522635669452_11.jpg"
+                  alt=""
+                  style="max-width: 100%; max-height: 100%"
+                />
+              </div>
+              <h4>C++</h4>
+            </div>
+            <div class="grid-child">
+              <div class="img">
+                <img
+                  src="Multimedia/Images/download.png"
+                  alt=""
+                  style="max-width: 100%; max-height: 100%"
+                />
+              </div>
+              <h4>JAVA</h4>
+            </div>
+          </div>
+        </section>
+        <!-- second section start -->
+        <section class="partition">
+          <h3>Front end Technologies</h3>
+          <div class="grid-parent">
+            <div class="grid-child">
+              <div class="img">
+                <img
+                  src="Multimedia/Images/html5-logo-file-html-logo-black-svg-wikimedia-commons-1.png"
+                  alt=""
+                  style="max-width: 100%; max-height: 100%"
+                />
+              </div>
+              <h4>HTML</h4>
+            </div>
+            <div class="grid-child">
+              <div class="img">
+                <img
+                  style="max-width: 100%; max-height: 100%"
+                  src="Multimedia/Images/html5-logo-opencode-css-8.png"
+                  alt=""
+                />
+              </div>
+              <h4>CSS</h4>
+            </div>
+            <div class="grid-child">
+              <div class="img">
+                <img
+                  src="Multimedia/Images/javascript-vector-logo-yellow-png-transparent-javascript-vector-12.png"
+                  alt=""
+                  style="max-width: 100%; max-height: 100%"
+                />
+              </div>
+              <h4>JAVA SCRIPT</h4>
+            </div>
+          </div>
+        </section>
+        <!-- section third -->
+        <section class="partition">
+          <h3>Java Script Frameworks</h3>
+          <div class="grid-parent">
+            <div class="grid-child">
+              <div class="img">
+                <img
+                  src="Multimedia/Images/download (1).png"
+                  alt=""
+                  style="max-width: 100%; max-height: 100%"
+                />
+              </div>
+              <h4>React.js</h4>
+            </div>
+            <div class="grid-child">
+              <div class="img">
+                <img
+                  src="Multimedia/Images/download (3).png"
+                  alt=""
+                  style="max-width: 100%; max-height: 100%"
+                />
+              </div>
+              <h4>Vue.js</h4>
+            </div>
+            <div class="grid-child">
+              <div class="img">
+                <img
+                  src="Multimedia/Images/download (4).png"
+                  alt=" "
+                  style="max-width: 100%; max-height: 100%"
+                />
+              </div>
+              <h4>Angular.js</h4>
+            </div>
+          </div>
+        </section>
+        <!-- section four -->
+        <section class="partition">
+          <h3>Back end Technologies</h3>
+          <div class="grid-parent">
+            <div class="grid-child">
+              <div class="img">
+                <img
+                  src="Multimedia/Images/download (2).png"
+                  alt=""
+                  style="max-width: 100%; max-height: 100%"
+                />
+              </div>
+              <h4>Node.js</h4>
+            </div>
+            <div class="grid-child">
+              <div class="img">
+                <img
+                  src="Multimedia/Images/mono.jpeg"
+                  style="max-width: 100%; max-height: 100%"
+                  alt=""
+                />
+              </div>
+              <h4>MonogoDB</h4>
+            </div>
+            <div class="grid-child">
+              <div class="img">
+                <img
+                  style="max-width: 100%; max-height: 100%"
+                  src="Multimedia/Images/api.png"
+                  alt=""
+                />
+              </div>
+              <h4>APIs</h4>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- contact form -->
+      <!-- subscribe our newsletter -->
+      <div class="form-container">
+        <div class="form-container-form">
+          <h2>newsletter</h2>
+          <form action="" method="post">
+            <div class="row">
+              <input placeholder="@email-address" type="email" id="email" />
+            </div>
+            <div class="row">
+              <button type="submit">Submit</button>
+            </div>
+          </form>
+          <p>
+            Subscribe our newsletter for getting latest infomation about our
+            articles direct in your mail-box .
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer" id="page-footer">
+      <div class="footer-wrapper">
+        <h3>Developer</h3>
+
+        <!-- desktop view -->
+        <div class="f-w-wrapOne desktop">
+          <div>
+            <img
+              style="width: 70px; height: 70px"
+              id="profile"
+              src="Multimedia/Images/WhatsApp Image 2021-06-23 at 04.23.07.jpeg"
+              alt=""
+            />
+          </div>
+          <div>
+            <p>Name : <span class="extra special">Rahul keshri</span></p>
+          </div>
+          <div>
+            <p>
+              E-mail:
+              <span class="extra special">keshrirahulkumar48@gmail.com</span>
+            </p>
+          </div>
+          <!-- * * testing some new features -->
+        </div>
+
+        <!-- end note -->
+        <div class="footer-end-note">
+          <div class="flex">
+            <span> All Rights Reserved </span>
+            <span> &copy; 2021 - 2022 (Made by Heart <img style="height: 15px; " src="../Multimedia/icon and logo/favorite_white_24dp.svg" alt="heart logo" id="heart-icon"> ) </span>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- page content end here -->
+    <!-- linkng js  -->
+    <script src="JavaScript/p1.js"></script>
+  </body>
+</html>
